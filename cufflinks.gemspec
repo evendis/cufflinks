@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "cufflinks"
   spec.version       = Cufflinks::VERSION
   spec.authors       = ["Paul Gallagher"]
-  spec.email         = ["gallagher.paul@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["paul@evendis.com"]
+  spec.description   = %q{A common user framework for Rails}
+  spec.summary       = %q{A common user framework for Rails}
+  spec.homepage      = "https://github.com/evendis/cufflinks"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,13 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "activesupport", ">= 3.0.3"
+
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rdoc"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "guard-rspec"
+  spec.add_development_dependency "rb-fsevent"
+
 end
