@@ -1,6 +1,10 @@
 # Cufflinks
 
-TODO: Write a gem description
+A work-in-progress refactoring to a gem of a common user framework for Rails.
+
+Currently has hard dependencies:
+
+* Mongoid (future: also ActiveRecord)
 
 ## Installation
 

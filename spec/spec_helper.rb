@@ -22,4 +22,9 @@ RSpec.configure do |config|
   # instead of true.
   # config.use_transactional_fixtures = true
 
+  # Clean up all collections before each spec runs.
+  config.before do
+    Mongoid.purge!
+  end
+
 end

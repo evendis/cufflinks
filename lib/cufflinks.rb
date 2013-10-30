@@ -1,5 +1,4 @@
-require "cufflinks/version"
+require 'mongoid'
 
-module Cufflinks
-  # Your code goes here...
-end
+require 'cufflinks/version'
+require 'cufflinks/user'
